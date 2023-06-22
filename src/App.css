@@ -6,10 +6,11 @@
 .container {
   background-color: #4a4152;
   color: white;
-  border: 1px solid greenyellow;
+  border: 1px solid rgb(99, 47, 255);
 }
 
 .App-header {
+  text-align: center;
   margin-top: 30px;
   padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

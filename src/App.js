@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header"></header>
+        <header className="App-header">Stephanie's Weather Source</header>
 
         <div className="search">
           <form>
