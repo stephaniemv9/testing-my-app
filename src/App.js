@@ -45,6 +45,38 @@ function App() {
             </div>
           </div>
         </div>
+
+        <div className="row future-weather">
+          <div className="col-sm-3">
+            Thu
+            <br />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="cloudy"
+            />
+          </div>
+          <div className="col-sm-3">
+            Fri <br />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="cloudy"
+            />
+          </div>
+          <div className="col-sm-3">
+            Sat <br />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="cloudy"
+            />
+          </div>
+          <div className="col-sm-3">
+            Sun <br />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="cloudy"
+            />
+          </div>
+        </div>
       </div>
       <footer>
         This project was coded by Stephanie Villamar and it is{" "}
