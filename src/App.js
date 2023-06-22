@@ -8,7 +8,7 @@ function App() {
       </header>
 
       <footer>
-        This project was coded by Stephanie Villamar and it is
+        This great project was coded by Stephanie Villamar and it is
         <a
           href="https://github.com/stephaniemv9/testing-my-app"
           rel="noreferrer"
