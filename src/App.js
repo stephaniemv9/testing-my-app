@@ -12,7 +12,7 @@ function App() {
           <span>Denver </span>
         </header>
 
-        <div className="search-bar">
+        <div className="search">
           <form>
             <div className="row">
               <div className="col-6">
@@ -22,17 +22,13 @@ function App() {
                   autoComplete="off"
                 ></input>
               </div>
-              <div className="col-2">
+
+              <div className="col-6">
                 <input
                   type="submit"
                   className="btn btn-primary"
                   value="search"
                 ></input>
-              </div>
-              <div className="col-2">
-                <button className="float-left btn btn-primary">
-                  Current location
-                </button>
               </div>
             </div>
           </form>
