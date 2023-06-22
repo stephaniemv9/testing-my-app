@@ -54,6 +54,8 @@ function App() {
               src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
               alt="cloudy"
             />
+            <br />
+            20°C
           </div>
           <div className="col-sm-3">
             Fri <br />
@@ -61,6 +63,8 @@ function App() {
               src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
               alt="cloudy"
             />
+            <br />
+            21°C
           </div>
           <div className="col-sm-3">
             Sat <br />
@@ -68,6 +72,8 @@ function App() {
               src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
               alt="cloudy"
             />
+            <br />
+            21°C
           </div>
           <div className="col-sm-3">
             Sun <br />
@@ -75,6 +81,8 @@ function App() {
               src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
               alt="cloudy"
             />
+            <br />
+            21°C
           </div>
         </div>
       </div>
