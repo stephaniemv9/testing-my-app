@@ -10,21 +10,21 @@ function App() {
           <form>
             <input
               type="text"
-              placeholder="Search City"
+              placeholder="  Search City"
               autoComplete="off"
               className="search-city"
             ></input>
 
             <input
               type="submit"
-              className="btn btn-primary"
-              value="search"
+              className="btn btn-primary search-button"
+              value="Search"
             ></input>
           </form>
         </div>
 
         <div className="weather-summary">
-          <h2 className="search-city">New York</h2>
+          <h2 className="city">New York</h2>
           <div className="weather-date-time">Monday 12:00PM</div>
           <div className="weather-detail">Cloudy</div>
         </div>
