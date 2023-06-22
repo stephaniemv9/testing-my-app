@@ -14,25 +14,33 @@ function App() {
 
         <div className="search-bar">
           <form>
-            <input
-              type="text"
-              placeholder="Enter city name"
-              autoComplete="off"
-            ></input>
-            <input
-              type="submit"
-              className="btn btn-primary"
-              value="search"
-            ></input>
-            <button className="float-left btn btn-primary">
-              Current location
-            </button>
+            <div className="row">
+              <div className="col-6">
+                <input
+                  type="text"
+                  placeholder="Enter city name"
+                  autoComplete="off"
+                ></input>
+              </div>
+              <div className="col-2">
+                <input
+                  type="submit"
+                  className="btn btn-primary"
+                  value="search"
+                ></input>
+              </div>
+              <div className="col-2">
+                <button className="float-left btn btn-primary">
+                  Current location
+                </button>
+              </div>
+            </div>
           </form>
         </div>
 
         <div className="weather-summary">
           <h2 className="search-city">New York</h2>
-          <div className="weather-date-time">Monday 12pm</div>
+          <div className="weather-date-time">Monday 12:00PM</div>
           <div className="weather-detail">Cloudy</div>
         </div>
 
