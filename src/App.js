@@ -15,7 +15,7 @@ function App() {
           target="_blank"
         >
           {" "}
-          open-sourced
+          open-sourced.
         </a>
       </footer>
     </div>
