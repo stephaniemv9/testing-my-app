@@ -8,3 +8,16 @@
   color: white;
   border: 1px solid greenyellow;
 }
+
+.App-header {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.weather-summary {
+  padding: 20px;
+}
+
+.weather-summary-two {
+  padding: 20px;
+}

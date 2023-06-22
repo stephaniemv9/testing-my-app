@@ -44,17 +44,19 @@ function App() {
           <div className="weather-detail">Cloudy</div>
         </div>
 
-        <div className="row">
-          <div className="col-sm-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-              alt="cloudy"
-            />
-            18° C
-          </div>
-          <div className="col-sm-6">
-            <div className="weather-detail-three">Precipitation: 82%</div>
-            <div className="weather-detail-four">Wind: 4km/h</div>
+        <div className="weather-summary-two">
+          <div className="row">
+            <div className="col-sm-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                alt="cloudy"
+              />
+              18° C
+            </div>
+            <div className="col-sm-6">
+              <div className="weather-detail-three">Precipitation: 82%</div>
+              <div className="weather-detail-four">Wind: 4km/h</div>
+            </div>
           </div>
         </div>
       </div>
