@@ -23,3 +23,11 @@
 .weather-summary-two {
   padding: 20px;
 }
+
+.search-city {
+  font-size: 30px;
+}
+
+.weather-degrees {
+  font-size: 50px;
+}

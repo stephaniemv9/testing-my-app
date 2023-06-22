@@ -4,13 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <span>New York </span>
-          <span>Quito </span>
-          <span>Rome </span>
-          <span>Madrid </span>
-          <span>Denver </span>
-        </header>
+        <header className="App-header"></header>
 
         <div className="search">
           <form>
@@ -18,7 +12,7 @@ function App() {
               <div className="col-6">
                 <input
                   type="text"
-                  placeholder="Enter city name"
+                  placeholder="Search City"
                   autoComplete="off"
                 ></input>
               </div>
@@ -49,6 +43,7 @@ function App() {
               />
               18° C
             </div>
+
             <div className="col-sm-6">
               <div className="weather-detail-three">Precipitation: 82%</div>
               <div className="weather-detail-four">Wind: 4km/h</div>
