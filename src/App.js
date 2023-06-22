@@ -33,15 +33,19 @@ function App() {
         <div className="weather-summary">
           <h2 className="search-city">New York</h2>
           <div className="weather-date-time">Monday 12pm</div>
-          <div className="weather-detail">Sunny</div>
+          <div className="weather-detail">Cloudy</div>
         </div>
 
         <div className="row">
-          <div className="col-sm-6">21 degrees</div>
           <div className="col-sm-6">
-            <div className="weather-detail-three">
-              Precipitation: 82 percent
-            </div>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="cloudy"
+            />
+            18° C
+          </div>
+          <div className="col-sm-6">
+            <div className="weather-detail-three">Precipitation: 82%</div>
             <div className="weather-detail-four">Wind: 4km/h</div>
           </div>
         </div>
