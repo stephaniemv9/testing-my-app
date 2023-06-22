@@ -8,23 +8,18 @@ function App() {
 
         <div className="search">
           <form>
-            <div className="row">
-              <div className="col-6">
-                <input
-                  type="text"
-                  placeholder="Search City"
-                  autoComplete="off"
-                ></input>
-              </div>
+            <input
+              type="text"
+              placeholder="Search City"
+              autoComplete="off"
+              className="search-city"
+            ></input>
 
-              <div className="col-6">
-                <input
-                  type="submit"
-                  className="btn btn-primary"
-                  value="search"
-                ></input>
-              </div>
-            </div>
+            <input
+              type="submit"
+              className="btn btn-primary"
+              value="search"
+            ></input>
           </form>
         </div>
 
