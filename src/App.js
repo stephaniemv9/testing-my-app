@@ -1,7 +1,11 @@
 import "./App.css";
 import React from "react";
+import axios from "axios";
 
-function App() {
+export default function App() {
+  const apikey = "75a21154277faea77d1df0f6f6cc4662";
+  let apiUrl =
+    "https://api.openweathermap.org/data/2.5/weather?&appid=${apiKey}";
   return (
     <div className="App">
       <div className="container">
@@ -105,5 +109,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
