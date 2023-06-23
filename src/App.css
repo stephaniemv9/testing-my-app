@@ -33,9 +33,20 @@
   font-weight: bold;
 }
 
+.weather-description {
+  text-transform: capitalize;
+}
+
 .weather-summary-two {
+  padding: 15px;
+}
+
+.weather-summary-three {
   text-align: center;
-  padding: 10px;
+}
+
+.weather-summary-four {
+  padding-top: 15px;
 }
 
 .search {
