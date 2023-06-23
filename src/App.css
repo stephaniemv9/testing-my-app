@@ -23,17 +23,17 @@
   padding: 20px;
 }
 
-.weather-summary-two {
-  padding: 20px;
-}
-
 .temperature {
   font-size: 50px;
 }
 
+.unit {
+  font-size: 50px;
+}
+
 .weather-summary-two {
-  line-height: 35px;
   text-align: center;
+  padding: 10px;
 }
 
 .search {

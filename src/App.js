@@ -32,17 +32,20 @@ function App() {
 
         <div className="weather-summary-two">
           <div className="row">
-            <div className="col-sm-6 temperature">
+            <div className="col-sm-6">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                 alt="cloudy"
+                className="temperature-link"
               />
-              18° C
+              <span className="temperature">18°</span>
+              <span className="unit">C</span>
             </div>
 
             <div className="col-sm-6">
-              <div className="weather-detail-three">Precipitation: 82%</div>
-              <div className="weather-detail-four">Wind: 4km/h</div>
+              <div className="precipitation">Precipitation: 82%</div>
+              <div className="humidity">Humidity: 15%</div>
+              <div className="wind">Wind: 4km/h</div>
             </div>
           </div>
         </div>
