@@ -32,7 +32,7 @@ function App() {
 
         <div className="weather-summary-two">
           <div className="row">
-            <div className="col-sm-6 weather-degrees">
+            <div className="col-sm-6 temperature">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                 alt="cloudy"
