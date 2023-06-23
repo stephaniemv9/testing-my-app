@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DateFile from "./DateFile";
 import axios from "axios";
 import "./App.css";
 
@@ -16,7 +17,7 @@ export default function App() {
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
       dayTemp: response.data.main.temp_max,
       nightTemp: response.data.main.temp_min,
-      date: "Today as of 12:00PM",
+      date: new Date(response.data.dt * 1000),
     });
 
     setReady(true);
@@ -48,7 +49,9 @@ export default function App() {
 
           <div className="weather-summary">
             <h1 className="city">{weatherData.city}</h1>
-            <div className="weather-date-time">{weatherData.date}</div>
+            <div>
+              <DateFile date={weatherData.date} />
+            </div>
           </div>
 
           <div className="weather-summary-two">
