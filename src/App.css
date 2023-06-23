@@ -25,10 +25,12 @@
 
 .temperature {
   font-size: 50px;
+  font-weight: bold;
 }
 
 .unit {
   font-size: 50px;
+  font-weight: bold;
 }
 
 .weather-summary-two {

@@ -31,13 +31,14 @@ function App() {
         </div>
 
         <div className="weather-summary-two">
-          <div className="row">
+          <div className="row mt-3">
             <div className="col-sm-6">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                 alt="cloudy"
-                className="temperature-link"
+                className="weather-link"
               />
+
               <span className="temperature">18°</span>
               <span className="unit">C</span>
             </div>
