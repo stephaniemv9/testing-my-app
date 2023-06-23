@@ -27,10 +27,6 @@
   padding: 20px;
 }
 
-.search-city {
-  font-size: 30px;
-}
-
 .weather-degrees {
   font-size: 50px;
 }
@@ -46,7 +42,7 @@
 
 .search-city {
   border-radius: 40px;
-  font-size: 20px;
+  font-size: 16px;
   margin: 5px;
   padding: 5px;
 }

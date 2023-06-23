@@ -13,6 +13,7 @@ function App() {
               placeholder="  Search City"
               autoComplete="off"
               className="search-city"
+              autoFocus="on"
             ></input>
 
             <input
