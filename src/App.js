@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DateFile from "./DateFile";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./App.css";
 
@@ -45,6 +46,7 @@ export default function App() {
                 value="Search"
               ></input>
             </form>
+            <WeatherInfo />
           </div>
 
           <div className="weather-summary">
