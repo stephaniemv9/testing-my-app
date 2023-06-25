@@ -1,3 +1,3 @@
 export default function WeatherInfo() {
-  return "Weather Info";
+  return "HELLLLOOOO";
 }
