@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import DateFile from "./DateFile";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./App.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
+  const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
@@ -24,6 +25,21 @@ export default function Weather() {
     setReady(true);
   }
 
+  function search() {
+    const apiKey = "96ad27349a64ea1dcdfbe6f4d458c085";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function handleCityChange(event) {
+    setCity(event.target.value);
+  }
+
   if (ready) {
     return (
       <div className="Weather">
@@ -31,13 +47,14 @@ export default function Weather() {
           <header className="App-header">Stephanie's Weather Source</header>
 
           <div className="search">
-            <form>
+            <form onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="  Search City"
                 autoComplete="off"
                 className="search-city"
                 autoFocus="on"
+                onChange={handleCityChange}
               ></input>
 
               <input
@@ -46,97 +63,13 @@ export default function Weather() {
                 value="Search"
               ></input>
             </form>
-            <WeatherInfo />
-          </div>
-
-          <div className="weather-summary">
-            <h1 className="city">{weatherData.city}</h1>
-            <div>
-              <DateFile date={weatherData.date} />
-            </div>
-          </div>
-
-          <div className="weather-summary-two">
-            <div className="row mt-3">
-              <div className="col-sm-6 weather-summary-three">
-                <img
-                  src={weatherData.iconUrl}
-                  alt=""
-                  className="weather-link"
-                />
-
-                <span className="temperature">
-                  {Math.round(weatherData.temperature)}
-                </span>
-                <span className="unit">°C</span>
-
-                <div className="dayNight-temp">
-                  Day {Math.round(weatherData.dayTemp)}°C • Night{" "}
-                  {Math.round(weatherData.nightTemp)}°C
-                </div>
-              </div>
-
-              <div className="col-sm-6 weather-summary-four">
-                <div className="weather-description">
-                  {weatherData.description}
-                </div>
-                <div className="humidity">
-                  Humidity: {weatherData.humidity}%
-                </div>
-                <div className="wind">Wind: {weatherData.wind}km/h</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row future-weather">
-            <div className="col-sm-3">
-              Thu
-              <br />
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                alt="cloudy"
-              />
-              <br />
-              20°C
-            </div>
-            <div className="col-sm-3">
-              Fri <br />
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                alt="cloudy"
-              />
-              <br />
-              21°C
-            </div>
-            <div className="col-sm-3">
-              Sat <br />
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                alt="cloudy"
-              />
-              <br />
-              21°C
-            </div>
-            <div className="col-sm-3">
-              Sun <br />
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                alt="cloudy"
-              />
-              <br />
-              21°C
-            </div>
+            <WeatherInfo data={weatherData} />
           </div>
         </div>
       </div>
     );
   } else {
-    const apiKey = "96ad27349a64ea1dcdfbe6f4d458c085";
-    let city = "New York";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(handleResponse);
-
+    search();
     return "Loading...";
   }
 }

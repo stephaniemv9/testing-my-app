@@ -1,3 +1,79 @@
-export default function WeatherInfo() {
-  return "HELLLLOOOO";
+import React from "react";
+import DateFile from "./DateFile";
+
+export default function WeatherInfo(props) {
+  return (
+    <div className="WeatherInfo">
+      <div className="weather-summary">
+        <h1 className="city">{props.data.city}</h1>
+        <div>
+          <DateFile date={props.data.date} />
+        </div>
+      </div>
+
+      <div className="weather-summary-two">
+        <div className="row mt-3">
+          <div className="col-sm-6 weather-summary-three">
+            <img src={props.data.iconUrl} alt="" className="weather-link" />
+
+            <span className="temperature">
+              {Math.round(props.data.temperature)}
+            </span>
+            <span className="unit">°C</span>
+
+            <div className="dayNight-temp">
+              Day {Math.round(props.data.dayTemp)}°C • Night{" "}
+              {Math.round(props.data.nightTemp)}°C
+            </div>
+          </div>
+
+          <div className="col-sm-6 weather-summary-four">
+            <div className="weather-description">{props.data.description}</div>
+            <div className="humidity">Humidity: {props.data.humidity}%</div>
+            <div className="wind">Wind: {props.data.wind}km/h</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="row future-weather">
+        <div className="col-sm-3">
+          Thu
+          <br />
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+            alt="cloudy"
+          />
+          <br />
+          20°C
+        </div>
+        <div className="col-sm-3">
+          Fri <br />
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+            alt="cloudy"
+          />
+          <br />
+          21°C
+        </div>
+        <div className="col-sm-3">
+          Sat <br />
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+            alt="cloudy"
+          />
+          <br />
+          21°C
+        </div>
+        <div className="col-sm-3">
+          Sun <br />
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+            alt="cloudy"
+          />
+          <br />
+          21°C
+        </div>
+      </div>
+    </div>
+  );
 }
