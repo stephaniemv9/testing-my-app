@@ -1,5 +1,6 @@
 import React from "react";
 import DateFile from "./DateFile";
+import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherInfo(props) {
   return (
@@ -16,10 +17,7 @@ export default function WeatherInfo(props) {
           <div className="col-sm-6 weather-summary-three">
             <img src={props.data.iconUrl} alt="" className="weather-link" />
 
-            <span className="temperature">
-              {Math.round(props.data.temperature)}
-            </span>
-            <span className="unit">°C</span>
+            <WeatherTemp celsius={props.data.temperature} />
 
             <div className="dayNight-temp">
               Day {Math.round(props.data.dayTemp)}°C • Night{" "}
