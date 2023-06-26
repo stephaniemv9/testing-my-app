@@ -23,6 +23,20 @@ export default function WeatherTemp(props) {
             °F
           </a>
         </span>
+        <div className="dayNight-temp">
+          <span>Day {Math.round(props.celsius)}</span>
+          <span>
+            °C |{" "}
+            <a href="/" onClick={convertToFahrenheit}>
+              °F
+            </a>
+          </span>
+          <span> • Night {Math.round(props.celsius)}</span>
+          °C |{" "}
+          <a href="/" onClick={convertToFahrenheit}>
+            °F
+          </a>
+        </div>
       </div>
     );
   } else {
@@ -36,6 +50,24 @@ export default function WeatherTemp(props) {
           </a>{" "}
           | °F
         </span>
+
+        <div className="dayNight-temp">
+          <span>Day {Math.round(fahrenheit)}</span>
+          <span>
+            <a href="/" onClick={convertToCelsius}>
+              °C{" "}
+            </a>{" "}
+            | °F
+          </span>
+
+          <span> • Night {Math.round(fahrenheit)}</span>
+          <span>
+            <a href="/" onClick={convertToCelsius}>
+              °C{" "}
+            </a>{" "}
+            | °F
+          </span>
+        </div>
       </div>
     );
   }

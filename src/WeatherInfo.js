@@ -18,11 +18,6 @@ export default function WeatherInfo(props) {
             <img src={props.data.iconUrl} alt="" className="weather-link" />
 
             <WeatherTemp celsius={props.data.temperature} />
-
-            <div className="dayNight-temp">
-              Day {Math.round(props.data.dayTemp)}°C • Night{" "}
-              {Math.round(props.data.nightTemp)}°C
-            </div>
           </div>
 
           <div className="col-sm-6 weather-summary-four">
