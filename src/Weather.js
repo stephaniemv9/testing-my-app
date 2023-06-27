@@ -46,25 +46,23 @@ export default function Weather(props) {
         <div className="container">
           <header className="App-header">Stephanie's Weather Source</header>
 
-          <div className="search">
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                placeholder="  Search City"
-                autoComplete="off"
-                className="search-city"
-                autoFocus="on"
-                onChange={handleCityChange}
-              ></input>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="  Search City"
+              autoComplete="off"
+              className="search-city"
+              autoFocus="on"
+              onChange={handleCityChange}
+            ></input>
 
-              <input
-                type="submit"
-                className="btn btn-primary search-button"
-                value="Search"
-              ></input>
-            </form>
-            <WeatherInfo data={weatherData} />
-          </div>
+            <input
+              type="submit"
+              className="btn btn-primary search-button"
+              value="Search"
+            ></input>
+          </form>
+          <WeatherInfo data={weatherData} />
         </div>
       </div>
     );
