@@ -2,18 +2,21 @@ import React from "react";
 
 export default function WeatherForecast() {
   return (
-    <div>
-      <div className="row future-weather">
+    <div className="future-weather">
+      <div className="row">
         <div className="col-sm-3">
-          Thu
-          <br />
+          <div className="WeatherForecast-day">Thu</div>
+
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
             alt="cloudy"
           />
-          <br />
-          20°C
+          <div className="WeatherForecast-temp">
+            <span className="WeatherForecast-temp-max">20°C</span>
+            <span className="WeatherForecast-temp-min">10°C</span>
+          </div>
         </div>
+
         <div className="col-sm-3">
           Fri <br />
           <img
