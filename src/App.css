@@ -71,6 +71,10 @@
   padding: 10px;
 }
 
+.WeatherForecast-temp-max {
+  font-weight: bold;
+}
+
 footer {
   text-align: center;
 }
