@@ -24,7 +24,7 @@ export default function WeatherForecast(props) {
             alt="cloudy"
           />
           <div className="WeatherForecast-temp">
-            <span className="WeatherForecast-temp-max">20°C</span>
+            <span className="WeatherForecast-temp-max">20°C • </span>
             <span className="WeatherForecast-temp-min">10°C</span>
           </div>
         </div>
