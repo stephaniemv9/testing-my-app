@@ -1,7 +1,6 @@
 import React from "react";
 import DateFile from "./DateFile";
 import WeatherTemp from "./WeatherTemp";
-import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -30,8 +29,6 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
-
-      <WeatherForecast />
     </div>
   );
 }
