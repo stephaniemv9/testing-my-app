@@ -22,6 +22,7 @@ export default function WeatherForecast(props) {
               src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
               alt="cloudy"
             />
+
             <div className="WeatherForecast-temp">
               <span className="WeatherForecast-temp-max">
                 {Math.round(forecast[0].temp.max)}°C •{" "}
