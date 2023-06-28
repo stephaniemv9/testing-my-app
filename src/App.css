@@ -79,6 +79,10 @@
   font-weight: bold;
 }
 
+.WeatherForecast-temp-min {
+  opacity: 0.5;
+}
+
 footer {
   text-align: center;
 }
