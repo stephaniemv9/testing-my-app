@@ -1,6 +1,7 @@
 import React from "react";
 import DateFile from "./DateFile";
 import WeatherTemp from "./WeatherTemp";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -19,7 +20,7 @@ export default function WeatherInfo(props) {
           </div>
 
           <div className="col-sm-4 weather-summary-four">
-            <img src={props.data.iconUrl} alt="" className="weather-link" />
+            <WeatherIcon code={props.data.icon} alt={props.data.description} />
           </div>
 
           <div className="col-sm-4 weather-summary-five">

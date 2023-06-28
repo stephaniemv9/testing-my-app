@@ -47,6 +47,10 @@
   text-align: center;
 }
 
+.weather-summary-four {
+  margin-top: 18px;
+}
+
 .weather-summary-five {
   padding-top: 15px;
 }
