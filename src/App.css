@@ -45,10 +45,11 @@
 
 .weather-summary-three {
   text-align: center;
+  margin-top: 15px;
 }
 
 .weather-summary-four {
-  margin-top: 18px;
+  margin-top: 13px;
 }
 
 .weather-summary-five {
